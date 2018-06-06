@@ -1,0 +1,469 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #060606;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    color: #9E9E9E;
+    font-size: 16em;
+    font-weight: 300;
+    height: 300px;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    margin-top: -5%;
+}
+
+h3 {
+    color: #9E9E9E;
+    font-size: 4em;
+    font-weight: 300;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    line-height: 60px;
+}
+
+#app-note {
+    font-size: 3.1em;
+    color: #fff;
+}
+
+#app-note {
+    display: none;
+}
+
+#key-code-container {
+    display: block;
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 1;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#overlay > h1 {
+    color: #9E9E9E;
+    font-size: 5em;
+    font-weight: 300;
+    height: 300px;
+    line-height: 300px;
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.keyboard-keys {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.key-first-row {
+    margin: 0 0 3px 4px;
+    width: 75px;
+    height: 40px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.key-second-row {
+    margin: 0 0 3px 11px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.key-second-row:nth-child(1) {
+    margin-left: 5px;
+}
+
+.key-second-row:nth-last-child(2) {
+    margin-right: 11px;
+}
+
+.delete-key {
+    margin: 0 auto;
+    width: 100px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.key-third-row {
+    margin: 0 0 3px 10.5px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.key-third-row:nth-child(2) {
+    margin-left: 11px;
+}
+
+.tab-key {
+    margin: 0 auto;
+    width: 110px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.key-fourth-row {
+    margin: 0 0 3px 10.5px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.key-fourth-row:nth-last-child(2) {
+    margin-right: 11px;
+}
+
+.caps-lock-key {
+    margin: 0 auto;
+    width: 120px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.enter-key {
+    margin: 0 auto;
+    width: 125px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.key-fifth-row {
+    margin: 0 0 3px 10.5px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.key-fifth-row:nth-last-child(2) {
+    margin-right: 12px;
+}
+
+.shift-key {
+    margin: 0 auto;
+    width: 158.5px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.function-key,
+.control-key,
+.option-key {
+    margin: 0 2px 0 1px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.command-key {
+    margin-left: 5px;
+    margin-right: 3px;
+    width: 90px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.space-key {
+    margin: 0 auto;
+    width: 400px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.up-key {
+    margin: 0 0 3px 4px;
+    width: 60px;
+    height: 30px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.down-key {
+    margin: 0 0 3px 4px;
+    width: 60px;
+    height: 30px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.left-key {
+    margin: 0 2px 0 1px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.right-key {
+    margin: 0 2px 0 1px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    justify-content: center;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.active {
+    border: 2px solid #fd0;
+    transform: scale(1.1);
+    color: #fd0;
+    -webkit-transition: all 0s ease;
+    -moz-transition: all 0s ease;
+    -ms-transition: all 0s ease;
+    transition: all 0s ease;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #app-note {
+        display: block;
+    }
+    #key-code-container {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #app-note {
+        display: block;
+    }
+    #key-code-container {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #app-note {
+        display: block;
+    }
+    #key-code-container {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #app-note {
+        display: block;
+    }
+    #key-code-container {
+        display: none;
+    }
+}
