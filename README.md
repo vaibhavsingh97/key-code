@@ -4,6 +4,9 @@
 
 <h1 align="center">Key Code</h1>
 <p align="center">Keycode returns the Unicode character code of the key.</p>
+<p align="center">
+  <img src="assets/gifs/demo.gif">
+</p>
 
 ## Installation
 
@@ -19,6 +22,9 @@ $ git clone https://github.com/vaibhavsingh97/key-code.git
 
 Open `index.html` file.
 
+## Demo
+
+open http://vaibhavsingh97.com/key-code/
 
 ## Issues
 
