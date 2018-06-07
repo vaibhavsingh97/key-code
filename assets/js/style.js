@@ -13,4 +13,18 @@ document.addEventListener('DOMContentLoaded', function () {
         const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
         key.classList.remove('active');
     });
+
+    window.addEventListener('mousedown', function(e) {
+        document.getElementById('overlay').style.display = 'none';
+        const key = document.querySelector(`.key[data-key="${e.srcElement.dataset.key}"]`);
+        if (key == null) return;
+        key.classList.add('active');
+        document.getElementById('answer').innerHTML = `${e.srcElement.dataset.key}`;
+    });
+
+    window.addEventListener('mouseup', function(e) {
+        const key = document.querySelector(`.key[data-key="${e.srcElement.dataset.key}"]`);
+        if (key == null) return;
+        key.classList.remove('active');
+    });
 }, false);

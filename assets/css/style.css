@@ -57,7 +57,7 @@ h3 {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-#overlay > h1 {
+#overlay>h1 {
     color: #9E9E9E;
     font-size: 5em;
     font-weight: 300;
@@ -78,6 +78,19 @@ h3 {
     margin: 0 auto;
 }
 
+.key {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.key:hover{
+    color: #fd0;
+    border: 2px solid #fd0;
+}
+
 .key-first-row {
     margin: 0 0 3px 4px;
     width: 75px;
@@ -90,11 +103,6 @@ h3 {
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .key-second-row {
@@ -109,11 +117,6 @@ h3 {
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .key-second-row:nth-child(1) {
@@ -135,11 +138,6 @@ h3 {
     line-height: 60px;
     text-align: center;
     justify-content: center;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .key-third-row {
@@ -154,11 +152,6 @@ h3 {
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .key-third-row:nth-child(2) {
@@ -176,11 +169,6 @@ h3 {
     line-height: 60px;
     text-align: center;
     justify-content: center;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .key-fourth-row {
@@ -195,11 +183,6 @@ h3 {
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .key-fourth-row:nth-last-child(2) {
@@ -217,11 +200,6 @@ h3 {
     line-height: 60px;
     text-align: center;
     justify-content: center;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .enter-key {
@@ -235,11 +213,6 @@ h3 {
     line-height: 60px;
     text-align: center;
     justify-content: center;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .key-fifth-row {
@@ -254,11 +227,6 @@ h3 {
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .key-fifth-row:nth-last-child(2) {
@@ -276,11 +244,6 @@ h3 {
     line-height: 60px;
     text-align: center;
     justify-content: center;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .function-key,
@@ -296,11 +259,6 @@ h3 {
     line-height: 60px;
     text-align: center;
     justify-content: center;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .command-key {
@@ -315,11 +273,6 @@ h3 {
     line-height: 60px;
     text-align: center;
     justify-content: center;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .space-key {
@@ -333,11 +286,6 @@ h3 {
     line-height: 60px;
     text-align: center;
     justify-content: center;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .up-key {
@@ -352,11 +300,6 @@ h3 {
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .down-key {
@@ -370,11 +313,6 @@ h3 {
     line-height: 60px;
     text-align: center;
     justify-content: center;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .left-key {
@@ -388,11 +326,6 @@ h3 {
     line-height: 60px;
     text-align: center;
     justify-content: center;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .right-key {
@@ -406,11 +339,6 @@ h3 {
     line-height: 60px;
     text-align: center;
     justify-content: center;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .active {
