@@ -86,7 +86,7 @@ h3 {
     transition: all 0.5s ease;
 }
 
-.key:hover{
+.key:hover {
     color: #fd0;
     border: 2px solid #fd0;
 }
@@ -367,6 +367,9 @@ h3 {
     #key-code-container {
         display: none;
     }
+    #overlay {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -374,6 +377,9 @@ h3 {
         display: block;
     }
     #key-code-container {
+        display: none;
+    }
+    #overlay {
         display: none;
     }
 }
@@ -385,6 +391,9 @@ h3 {
     #key-code-container {
         display: none;
     }
+    #overlay {
+        display: none;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -392,6 +401,9 @@ h3 {
         display: block;
     }
     #key-code-container {
+        display: none;
+    }
+    #overlay {
         display: none;
     }
 }
