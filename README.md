@@ -3,7 +3,11 @@
 </p>
 
 <h1 align="center">Key Code</h1>
-<p align="center">Keycode returns the Unicode character code of the key.</p>
+<p align="center">Keycode returns the Unicode character code of the key.<br> (Inspired from <a href="http://keycode.info)">keycode.info</a>)</p>
+
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+
 <p align="center">
   <img src="assets/gifs/demo.gif">
 </p>
